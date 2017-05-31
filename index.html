@@ -37,9 +37,21 @@
     <div class="container-fluid">
         <div id="wrapper">
             <div class="row">
-                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12"></div>
+                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+
+                </div>
                 <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
                     <aside style="color:black">
+                        <div class="profile">
+                          <img src="https://thumbs.dreamstime.com/t/smiling-young-woman-wearing-glasses-25009162.jpg" alt="woman" class="img-circle">
+                          <div class="profile-right">
+                                <a href='#'>Yazan Rawashdeh</a>
+                                <p>555-555-555</p>
+                                <small>yazan@gmail.com</small>
+                          </div>
+
+                          <button class="btn team pull-right">Team</button>
+                        </div>
                         <ul class="list-unstyled tasks">
                             <li>
                                 <div class="task-right">
@@ -69,11 +81,29 @@
                                 </div>
                             </li>
                         </ul>
+                        <div class="modal fade modal-xs" id="team-modal" tabindex="-1" role="dialog" aria-labelledby="team-modal" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <p>team photos</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </aside>
                 </div>
             </div>
     </div>
     <script src="js/jquery.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script>
+      $(function () {
+          $('.team').click(function () {
+              $('#team-modal').modal();            
+              $('.modal-backdrop').appendTo('aside');
+              $('body').removeClass();
+          });
+      });
+    </script>
   </body>
 </html>

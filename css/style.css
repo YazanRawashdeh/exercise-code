@@ -29,3 +29,21 @@ ul.tasks > li a{
     padding: 10px;
     display: inline-block
 }
+
+.modal, .modal-backdrop {
+    position: absolute !important;
+}
+
+.modal-dialog{
+    width: 90%
+}
+.profile{
+    padding: 10px
+}
+.profile img{
+    width:100px
+}
+
+.profile .profile-right{
+    display: inline-block
+}
