@@ -1,0 +1,31 @@
+#wrapper {
+    margin-top: 50px
+}
+
+.btn-round {
+    border-radius: 12px;
+    padding: 12px;
+    background:#d6ff4c;
+}
+
+aside {
+    background: #f7f4f1
+}
+
+ul.tasks > li {
+    padding: 10px;
+    border-top: 1px solid #777
+}
+
+ul.tasks > li a{
+    display: block
+}
+.task-right{
+    padding: 10px;
+    display: inline-block
+}
+
+.task-left{
+    padding: 10px;
+    display: inline-block
+}
